@@ -1,0 +1,15 @@
+﻿@{
+    var data = Model.Server;
+}
+using Abp.Domain.Services;
+
+namespace @data.ReplaceInfo.CompanyNamespace@data.ReplaceInfo.SolutionNamespace
+{
+	public abstract class @{@data.ReplaceInfo.SolutionNamespace}DomainServiceBase : DomainService
+	{
+		protected @{@data.ReplaceInfo.SolutionNamespace}DomainServiceBase()
+		{
+			LocalizationSourceName = @{@data.ReplaceInfo.SolutionNamespace}Consts.LocalizationSourceName;
+		}
+	}
+}

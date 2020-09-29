@@ -1,0 +1,24 @@
+﻿@model AbpDtoGenerator.GeneratorModels.ViewModel
+@{
+    var data = Model.Server;
+    var option = Model.MainWindowsOptionCfg;
+}
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Abp.Application.Services;
+using Abp.Application.Services.Dto;
+using L._52ABP.Application.Dtos;
+using @{@data.Entity.Namespace}.Dtos;
+using @data.Entity.Namespace;
+
+namespace @data.Entity.Namespace
+{
+    /// <summary>
+    /// @{@data.Entity.EntityDisplayName}服务的接口方法
+    ///</summary>
+    public interface I@{@data.Entity.Name}AppService : IApplicationService
+    {						
+		<pre>@{@ViewBag.OldCustomCode}</pre>
+    }
+}

@@ -1,0 +1,11 @@
+﻿@{
+    var data = Model.Server;
+}
+namespace @data.ReplaceInfo.CompanyNamespace@data.ReplaceInfo.SolutionNamespace
+{
+	public class AppLtmConsts
+	{
+		public const int DefaultPageSize = 10;
+		public const int MaxPageSize = 1000;
+	}
+}

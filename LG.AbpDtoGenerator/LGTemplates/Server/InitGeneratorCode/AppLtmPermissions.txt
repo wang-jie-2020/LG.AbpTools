@@ -1,0 +1,15 @@
+﻿@{
+    var data = Model.Server;
+}
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace @data.ReplaceInfo.CompanyNamespace@{@data.ReplaceInfo.SolutionNamespace}.Authorization
+{
+	public class AppLtmPermissions
+	{
+		public const string Pages = "Pages";
+		public const string Pages_Administration = "Pages.Administration";
+	}
+}
