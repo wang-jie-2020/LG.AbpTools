@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
+using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
+using LG.Platform.Common.CustomAttribute;
+
+namespace %Namespace%
+{
+    /// <summary>
+    /// %TableDesc%
+    /// </summary>
+    [DisplayName("%TableDesc%")]
+    public partial class %TableName% : FullAuditedEntity<long>%IMustHaveTenant%
+    {
+%ColumnEntity%
+    }
+}
