@@ -22,6 +22,7 @@ using DtoGenerator.Vsix;
 using Document = Microsoft.CodeAnalysis.Document;
 using Process = System.Diagnostics.Process;
 using Project = Microsoft.CodeAnalysis.Project;
+using Microsoft.VisualStudio.LanguageServices;
 
 namespace LGVSIX
 {
@@ -108,7 +109,7 @@ namespace LGVSIX
 
             try
             {
-                Workspace workspace = ((IComponentModel)Package.GetGlobalService(typeof(SComponentModel))).GetService<Workspace>();
+                VisualStudioWorkspace workspace = ((IComponentModel)Package.GetGlobalService(typeof(SComponentModel))).GetService<VisualStudioWorkspace>();
 
                 ProjectItem selectedItem = this.GetSelectedSolutionExplorerItem();
                 if (selectedItem != null && selectedItem.Name != null && !selectedItem.Name.EndsWith(".cs"))
